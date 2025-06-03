@@ -83,13 +83,13 @@ h1 {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 56%;
     min-width: 30%;
     height: auto;
     justify-content: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
-    gap: 50px;
+    gap: 0 100px;
     border-left: 10px solid white;
     margin: auto; /* Centers the container itself */
 }
@@ -147,10 +147,13 @@ h1 {
 
 .inner-square-4 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #eb11a2;
   color: #f7f7fa;
   margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
   justify-content: center;
   align-items: center;
 }
@@ -510,9 +513,12 @@ label:hover {
   justify-content: center;
   gap: 40px;
   margin-top: 30px;
-  
 }
 
+.welcome {
+  color: #f30d80;
+  text-align: center;
+}
 .grid-item-1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
