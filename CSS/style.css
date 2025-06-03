@@ -83,71 +83,37 @@ h1 {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    width: auto;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    width: 100%;
+    min-width: 20%;
     height: auto;
     justify-content: center;
     align-items: center;
     gap: 50px;
-}
-
-.inner-square-1 {
-    background-color: #1915e6;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    Padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.welcome {
-    text-align: center;
-    margin-left: 20px;
-    font-size: 2rem;
-    font-weight: bold;
-    transition:  ease-in;
-    flex: 1; /* Makes text take up remaining space */
-    color: #f71d95
+    border-left: 10px;
 }
 
 .flex-container {
-    background-color: #1915e6;
-    display: flex;
-    align-items: center; /* Aligns image and text vertically */
-    gap: 20px; /* Adds space between image and text */
-    padding: 20px;
+  background-color: #0004ff;
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Image takes less space than text */
+  align-items: center; /* Aligns content vertically */
+  gap: 20px; /* Space between image and text */
+}
+
+.welcome-paragraph {
+    text-align: center;
     margin-left: 20px;
-    overflow: hidden;
-    font-size: 25px;
+    margin-right: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: justify;
+    transition:  ease-in;
+    color: #f8f3f6
 }
-
-.Home-image {
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px solid blue; /* Optional rounded corners */
-}
-
-.Home-image:hover {
-  width: 340px;
-}
-
 
 .inner-square-2 {
-    background-color: hsl(329, 61%, 61%);;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    Padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-right: 20px;
+    background-color: #eb11a2;
 }
 
 .name {
@@ -161,50 +127,20 @@ h1 {
 }
 
 .inner-square-3 {
-    background-color: hsl(329, 61%, 61%);
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    Padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+  background-color: #eb11a2;
+  color: #0004ff;
 }
 
 .second-attribute {
     text-align: center;
     font-size: 25px;
-    color: #0004ff;
+    color: #1c1ccc;
 }
 
 .inner-square-4 {
-    background-color: #1915e6;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    Padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    height: 330px;
-    min-width: 200px;
-    text-align: justify;
-    font-weight: bold;
-    font-size: 28px;
-    overflow: hidden;
-}
-
-.third-attribute {
-  text-align: justify;
-  color: #f7c00c;
-  float: right;
-  margin-left: 50px;
+  background-color: #eb11a2;
+  color: #f7f7fa;
+  margin-bottom: 10px;
 }
 
 .researcher-paragraph {
@@ -214,18 +150,18 @@ h1 {
     width: 200px;
     height: 240px;
     float: left;
-    margin-right: 50px;
+    margin: 10px;
+
 }
 
 .footer {
     display: flex;
     background-color: #e436be;
-    width: auto;
+    width: 100%;
     height: 55px;
     justify-content: center;
-    padding-bottom: 114px;
+    padding-bottom: 130px;
     margin-bottom: 0;
-    padding-right: 55px;
     margin-right: 0;
     padding-top: 20px;
 }
@@ -275,21 +211,29 @@ h1 {
 .square-container-about {
     background-color: white;
     display: grid;
-    grid-template-columns: 2, 1fr;
-    border: none;
-    border-radius: 2px yellow;
+    grid-template-rows: auto; /* Ensures each element stacks */
+    gap: 10px; /* Adds spacing between elements */
+    padding: 10px;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+
+
+.question-1 {
+  background-color: #db158f;
+  font-weight: bold; 
+  color: white;
+  height: auto;
+  width: 51%;
+  padding-left: 10px;
+  text-align: center; /* Helps make text more responsive */
+  font-size: clamp(16px, 1vw, 28px); /* Ensures responsive text */
 }
 
 .about-square-1 {
     background-color: #0004ff;
-    width: 800px;
+    width: 50%;
     height: auto;
-    min-width: 200px;
-    min-height: 210px;
     padding: 10px;
     padding-top: 2px;
     text-align: justify;
@@ -301,10 +245,8 @@ h1 {
 
 .about-square-2 {
     background-color: #0004ff;
-    width: 800px;
+    width: 50%;
     height: auto;
-    min-width: 200px;
-    min-height: 210px;
     padding: 10px;
     text-align: justify;
     color: white;
@@ -315,10 +257,8 @@ h1 {
 
 .about-square-3 {
     background-color: #0004ff;
-    width: 800px;
+    width: 50%;
     height: auto;
-    min-width: 200px;
-    min-height: 210px;
     padding: 10px;
     text-align: justify;
     color: white;
@@ -329,39 +269,35 @@ h1 {
 
 .about-square-4 {
     background-color: #0004ff;
-    width: 800px;
+    width: 50%;
     height: auto;
-    min-width: 200px;
-    min-height: 210px;
     padding: 10px;
     text-align: justify;
     color: white;
     font-family: "Crimson Text", serif;
     font-weight: 100;
     font-style: normal;
+    object-fit: cover;
 }
 
-@media (max-width: 600px) {
-    .square-container-about {
-        grid-template-columns: repeat(1, 1fr); /* Switch to one square per row */
-    }
+.square-container-about {
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    gap: 10px;
+    padding: 10px;
 }
+
 
 /*معرفی راحیل بیات*/
-.question-1 {
-    background-color: #db158f;
-    color: white;
-    padding-left: 10px;
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 700;
-    font-style: normal
-}
+
 
 .about-page-image {
-    width: 800px;
-    height: auto;
-    justify-content: center;
+    width: 100%; /* Makes the image cover the full width */
+    height: 100%; /* Forces image to fill the height */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
 }
+
 /*پورتفولیو استایلس*/
 
 .slider-container {
@@ -554,10 +490,11 @@ label:hover {
 
 .container-of-mine {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: repeat(auto-fit, minmax(200px 1fr));
   justify-content: center;
   gap: 40px;
   margin-top: 30px;
+  
 }
 
 .grid-item-1 {
@@ -577,9 +514,9 @@ label:hover {
   }
 
 .grid-item-1:hover {
-    transform: scale(6)
-    transition: 1.2s;
-  }
+    transform: scale(1.2); /* Adjusted scaling */
+    transition: transform 1.2s ease-in-out;
+}
 
 .text-front {
     font-size: 1.1rem;
