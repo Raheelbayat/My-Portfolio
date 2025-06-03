@@ -99,6 +99,7 @@ h1 {
   grid-template-columns: 1fr 2fr; /* Image takes less space than text */
   align-items: center; /* Aligns content vertically */
   gap: 20px; /* Space between image and text */
+  height: fit-content;
 }
 
 .welcome-paragraph {
