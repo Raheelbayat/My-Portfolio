@@ -78,7 +78,7 @@ nav ul li a:hover {
 
 h1 {
     border-left-style: 10px solid rgb(240, 238, 239); /*border of h1*/
-    color: #E11880;
+    color:#fcfafb;
 }
 
 .container {
@@ -122,6 +122,8 @@ h1 {
     gap: 20px; /* Adds space between image and text */
     padding: 20px;
     margin-left: 20px;
+    overflow: hidden;
+    font-size: 25px;
 }
 
 .Home-image {
@@ -190,20 +192,24 @@ h1 {
     padding-right: 30px;
     margin-right: 20px;
     margin-bottom: 20px;
-    height: 300px;
-    font-size: 25px;
+    height: 330px;
+    min-width: 200px;
     text-align: justify;
     font-weight: bold;
+    font-size: 28px;
+    overflow: hidden;
 }
 
 .third-attribute {
-    text-align: justify;
-    font-size: 25px;
-    color: #f7c00c;
-    float: right;
-    margin-left: 50px;
+  text-align: justify;
+  color: #f7c00c;
+  float: right;
+  margin-left: 50px;
 }
 
+.researcher-paragraph {
+  font-size: 22px;
+}
 .research-image {
     width: 200px;
     height: 240px;
@@ -270,7 +276,7 @@ h1 {
     background-color: white;
     display: grid;
     grid-template-columns: 2, 1fr;
-    border: 2px solid blue;
+    border: none;
     border-radius: 2px yellow;
     justify-content: center;
     gap: 20px;
@@ -343,7 +349,7 @@ h1 {
 
 /*معرفی راحیل بیات*/
 .question-1 {
-    background-color: #b10f8e;
+    background-color: #db158f;
     color: white;
     padding-left: 10px;
     font-family: "Lobster Two", sans-serif;
@@ -352,7 +358,7 @@ h1 {
 }
 
 .about-page-image {
-    width: 790px;
+    width: 800px;
     height: auto;
     justify-content: center;
 }
@@ -527,7 +533,7 @@ label:hover {
 }
 
 .option1 {
-  background-color: rgb(219, 21, 143);
+  background-color: rgb(55, 12, 245);
   padding: 12px;
   border-radius: 2px;
   border-radius: 8px;
@@ -627,7 +633,7 @@ label:hover {
 
 h2 {
     text-align: center;
-    color: #ee0c88;
+    color: #100cee;
 }
 
 form {
@@ -645,7 +651,7 @@ input, textarea {
 }
 
 button {
-    background: #f718ad;
+    background: #3308f1;
     color: white;
     padding: 10px;
     border: none;
