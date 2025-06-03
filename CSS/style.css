@@ -83,24 +83,30 @@ h1 {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    width: 100%;
-    min-width: 20%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 56%;
+    min-width: 30%;
     height: auto;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
     gap: 50px;
-    border-left: 10px;
+    border-left: 10px solid white;
+    margin: auto; /* Centers the container itself */
 }
 
 .flex-container {
-  background-color: #0004ff;
-  display: grid;
-  grid-template-columns: 1fr 2fr; /* Image takes less space than text */
-  align-items: center; /* Aligns content vertically */
-  gap: 20px; /* Space between image and text */
-  height: auto fit-content;
-  width: auto fit-content;
+    display: flex;
+    flex-wrap: wrap; /* Allows text to wrap properly */
+    justify-content: center;
+    background-color: #0004ff;
+    align-items: center;
+    max-width: 90%;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.home-image {
+  margin-top: 10px;
 }
 
 .welcome-paragraph {
@@ -110,7 +116,7 @@ h1 {
     font-size: 1em;
     font-weight: bold;
     text-align: justify;
-    transition:  ease-in;
+    transition: font-size 0.3s ease-in;
     color: #f8f3f6
 }
 
@@ -124,7 +130,7 @@ h1 {
 
 .exile-static-2 {
     font-family: 'Exile', sans-serif;
-    color: #0004ff;
+    color: #1e1ebe;
     font-size: 40px;
 }
 
@@ -140,20 +146,26 @@ h1 {
 }
 
 .inner-square-4 {
+  display: flex;
+  flex-direction: row;
   background-color: #eb11a2;
   color: #f7f7fa;
   margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .researcher-paragraph {
   font-size: 22px;
+  padding-left: 10px;
+  border-left: 10px;
+  font-size: 20px;
 }
 .research-image {
     width: 200px;
     height: 240px;
-    float: left;
+    justify-content: center;
     margin: 10px;
-
 }
 
 .footer {
@@ -461,20 +473,22 @@ label:hover {
 
 .navbar-portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 80px;
   margin-left: 70px;
   margin-right: 70px;
   color: white;
   text-align: center;
   font-size: 18px;
+  max-width: 90%;
+  margin: auto;
 }
 
 .option1 {
   background-color: rgb(55, 12, 245);
   padding: 12px;
-  border-radius: 2px;
   border-radius: 8px;
+
 }
 
 /*Copyright for portfolio page needs more bottom-padding so I coded here.*/
