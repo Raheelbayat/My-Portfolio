@@ -1,0 +1,658 @@
+body {
+    color: #d6a1bb;
+    margin: 0;
+    padding: 0;
+}
+
+.title-home {
+    color: #0004ff;
+    font-weight: bolder;
+    text-align: center;
+}
+nav {
+  width: 100%;
+  padding: 40px;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  background: linear-gradient(to right, #cf87bd, #e074aa);
+  background-size: 100% 100%;
+  animation: gradientShift 5s infinite alternate;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(to right, #ee66ce, #e99bc2);
+  }
+  100% {
+    background: linear-gradient(to right, #e69cd9, #f0aad8);
+  }
+}
+
+ul, a {
+    list-style: none;
+    margin: 0;
+    margin-top: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: rgb(219, 21, 143);
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    position: sticky;
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 0px;
+    background-color: none;
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+nav ul li a:hover {
+    color: white;
+    font-weight: bolder;
+}
+@keyframes bounce  {
+     from {background-color: #b10f8e;}
+     to {background-color: #e436be;}
+}
+
+h1 {
+    border-left-style: 10px solid rgb(240, 238, 239); /*border of h1*/
+    color: #E11880;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.inner-square-1 {
+    background-color: #1915e6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    Padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.welcome {
+    text-align: center;
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    transition:  ease-in;
+    flex: 1; /* Makes text take up remaining space */
+    color: #f71d95
+}
+
+.flex-container {
+    background-color: #1915e6;
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+    gap: 20px; /* Adds space between image and text */
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.Home-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px solid blue; /* Optional rounded corners */
+}
+
+.Home-image:hover {
+  width: 340px;
+}
+
+
+.inner-square-2 {
+    background-color: hsl(329, 61%, 61%);;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    Padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 20px;
+}
+
+.name {
+    text-align: center;
+}
+
+.exile-static-2 {
+    font-family: 'Exile', sans-serif;
+    color: #0004ff;
+    font-size: 40px;
+}
+
+.inner-square-3 {
+    background-color: hsl(329, 61%, 61%);
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    Padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.second-attribute {
+    text-align: center;
+    font-size: 25px;
+    color: #0004ff;
+}
+
+.inner-square-4 {
+    background-color: #1915e6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    Padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+    font-size: 25px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.third-attribute {
+    text-align: justify;
+    font-size: 25px;
+    color: #f7c00c;
+    float: right;
+    margin-left: 50px;
+}
+
+.research-image {
+    width: 200px;
+    height: 240px;
+    float: left;
+    margin-right: 50px;
+}
+
+.footer {
+    display: flex;
+    background-color: #e436be;
+    width: auto;
+    height: 55px;
+    justify-content: center;
+    padding-bottom: 114px;
+    margin-bottom: 0;
+    padding-right: 55px;
+    margin-right: 0;
+    padding-top: 20px;
+}
+
+.mail-icon {
+    font-size: 24px;
+    color: #0c0c0c; /* Blue color */
+    margin-top: 5px;
+
+}
+
+.contact {
+    color: #ffffff;
+    font-weight: bold;
+}
+.links {
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.copy-right {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(250, 249, 249);
+    margin-top: 4px;
+}
+
+.reserved {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 4px;
+}
+.exile-static {
+    font-family: 'Exile', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #133df8;
+}
+.Email {
+    color: #f9f9fc;
+    font-size: 30px;
+}
+/*About page styles starts here*/
+
+.square-container-about {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    border: 2px solid blue;
+    border-radius: 2px yellow;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-square-1 {
+    background-color: #0004ff;
+    width: 800px;
+    height: auto;
+    min-width: 200px;
+    min-height: 210px;
+    padding: 10px;
+    padding-top: 2px;
+    text-align: justify;
+    color: white;
+    font-family: "Crimson Text", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.about-square-2 {
+    background-color: #0004ff;
+    width: 800px;
+    height: auto;
+    min-width: 200px;
+    min-height: 210px;
+    padding: 10px;
+    text-align: justify;
+    color: white;
+    font-family: "Crimson Text", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.about-square-3 {
+    background-color: #0004ff;
+    width: 800px;
+    height: auto;
+    min-width: 200px;
+    min-height: 210px;
+    padding: 10px;
+    text-align: justify;
+    color: white;
+    font-family: "Crimson Text", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.about-square-4 {
+    background-color: #0004ff;
+    width: 800px;
+    height: auto;
+    min-width: 200px;
+    min-height: 210px;
+    padding: 10px;
+    text-align: justify;
+    color: white;
+    font-family: "Crimson Text", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+@media (max-width: 600px) {
+    .square-container-about {
+        grid-template-columns: repeat(1, 1fr); /* Switch to one square per row */
+    }
+}
+
+/*معرفی راحیل بیات*/
+.question-1 {
+    background-color: #b10f8e;
+    color: white;
+    padding-left: 10px;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: normal
+}
+
+.about-page-image {
+    width: 790px;
+    height: auto;
+    justify-content: center;
+}
+/*پورتفولیو استایلس*/
+
+.slider-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  overflow: hidden;
+  border: 6px double #db158f;
+  height: auto;
+}
+
+.slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  display: none;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.download-button-class {
+ display: block; /* Forces the link to move to a new line */
+  margin-top: 10px; /* Adds space between image and button */
+  padding: 10px 15px;
+  background-color: #db158f;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+
+.download-button-class:hover {
+  background-color: #0056b3;
+}
+
+#slide1:checked ~ .slides #s1,
+#slide2:checked ~ .slides #s2,
+#slide3:checked ~ .slides #s3 {
+  display: block;
+}
+
+.slide-text > div {
+  display: none;
+  text-align: justify;        /* Justify the text */
+  direction: ltr;             /* Right-to-left text direction */
+  padding: 10px;              /* Space inside the border */
+  margin: 20px auto;          /* Centered horizontally with spacing */
+  border: 6px double #db158f;     /* Light border */
+  width: 100%;                 /* Width of the box */
+  box-sizing: border-box;     /* Include padding in width */
+  background-color: #f9f9f9;  /* Optional: soft background */               /* Text color */
+  font-family: sans-serif;    /* Clean font */
+  color: #1e0fa1;
+}
+
+.subtitle-of-almond-article {
+    color: #f10bb8;
+    text-align: left;
+}
+
+#slide1:checked ~ .slide-text #text1,
+#slide2:checked ~ .slide-text #text2,
+#slide3:checked ~ .slide-text #text3 {
+  display: block;
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.nav-btn {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  margin-bottom: 20px;
+  background: #db158f;
+  color: rgb(101, 17, 236);
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+/*تصاویر مقالات و سایر موارد پورتفولیو*/
+
+.suboptions-container {
+    width: auto-fit;
+    min-width: 600px;
+    height: 40px;
+    margin-left: 58px;
+    margin-right: 100px;
+    box-sizing: border-box;
+    border-radius: 2px solid pink;
+    text-align: center;
+}
+
+.nav-menu {
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 99px;
+  padding: 10px 15px;
+  background: #ee0b97;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+label:hover {
+  background: #0056b3;
+}
+.changer {
+    margin-left: 60px;
+}
+
+/* Hide content sections by default */
+.content {
+  display: none;
+  padding: 20px;
+  border: 2px solid #ddd;
+  margin-top: 10px;
+}
+
+/* Show content when the corresponding radio is selected */
+#research:checked ~ #research-content,
+#achievments:checked ~ #achievments-content,
+#mtalk:checked ~ #mtalk-content,
+#congress:checked ~ #congress-content,
+#web-content:checked ~ #web-content, {
+  display: block;
+}
+
+.almond-image {
+    background-color: #b10f8e;
+    width: 500px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+/*Navigation 2-subdevision*/
+
+.navbar-portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  gap: 80px;
+  margin-left: 70px;
+  margin-right: 70px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.option1 {
+  background-color: rgb(219, 21, 143);
+  padding: 12px;
+  border-radius: 2px;
+  border-radius: 8px;
+}
+
+/*Copyright for portfolio page needs more bottom-padding so I coded here.*/
+
+.footer-portfolio {
+    padding-bottom: auto;
+}
+
+.copy-right-2 {
+    all: unset; /*via this code I cut off (reset) the inheritance between body and the copyright portion of portfolio page*/
+    color: white;
+}
+
+/*WEB DESIGN PAGE*/
+
+.container-of-mine {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.grid-item-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+    margin: 10px 30px;
+    height: auto;
+    width: 500px;
+    background-color: #f718ad;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px rgb(226, 142, 156);
+    transition: background-color 0.4s ease-in-out;
+    border: 10px solid rgb(247, 15, 142);
+  }
+
+.grid-item-1:hover {
+    transform: scale(6)
+    transition: 1.2s;
+  }
+
+.text-front {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fcf9fb;
+    transition: opacity 0.3s ease;
+}
+
+.text-back {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(250, 26, 175);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding-top: 200px;
+    padding-left: 140px;
+}
+
+.grid-item-1:hover {
+    background-color: #faf8f9;
+}
+  
+.grid-item-1:hover .text-front {
+    opacity: 0;
+}
+  
+.grid-item-1:hover .text-back {
+    opacity: 1;
+}
+/*proverb-other-web-page-photos*/
+.proverb-other-web-page-photos {
+  align-items: center;
+}
+
+.flower {
+  width: 480px;
+  height: fit-content;
+}
+
+/*Contact-page*/
+.contact-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 60px;
+}
+
+h2 {
+    text-align: center;
+    color: #ee0c88;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 98%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #f718ad;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c81489;
+}
